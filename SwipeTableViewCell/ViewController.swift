@@ -55,19 +55,22 @@ class ViewController: UITableViewController {
             
             cell.roundCorners(corners: [.topRight, .topLeft], radius: 25.0)
             
-            let volumeBut = MGSwipeButton(title: " Убрать звук", icon: #imageLiteral(resourceName: "albums_mute"), backgroundColor: #colorLiteral(red: 0.9441747069, green: 0.5805539489, blue: 0.2003090978, alpha: 1))
-            volumeBut.buttonWidth = 80
+            let volumeBut = MGSwipeButton(title: "Убрать звук", icon: #imageLiteral(resourceName: "albums_mute"), backgroundColor: #colorLiteral(red: 0.9441747069, green: 0.5805539489, blue: 0.2003090978, alpha: 1))
+            volumeBut.centerIconOverText()
             
-            let stackBut = MGSwipeButton(title: " В список", icon: #imageLiteral(resourceName: "albums_inlist"), backgroundColor:#colorLiteral(red: 0.01496514957, green: 0.4769831896, blue: 0.9854087234, alpha: 1))
+            let stackBut = MGSwipeButton(title: "В список", icon: #imageLiteral(resourceName: "albums_inlist"), backgroundColor:#colorLiteral(red: 0.01496514957, green: 0.4769831896, blue: 0.9854087234, alpha: 1))
+            stackBut.centerIconOverText()
             
             cell.rightButtons = [stackBut, volumeBut]
             
         } else if indexPath.section == 1 {
             cell.roundCorners(corners: [.topRight, .bottomRight], radius: 25.0)
             
-            let volumeBut = MGSwipeButton(title: " Вкл. звук", icon: #imageLiteral(resourceName: "albums_unmute"), backgroundColor: #colorLiteral(red: 0.9441747069, green: 0.5805539489, blue: 0.2003090978, alpha: 1))
+            let volumeBut = MGSwipeButton(title: "Вкл. звук", icon: #imageLiteral(resourceName: "albums_unmute"), backgroundColor: #colorLiteral(red: 0.9441747069, green: 0.5805539489, blue: 0.2003090978, alpha: 1))
+            volumeBut.centerIconOverText()
             
-            let stackBut = MGSwipeButton(title: " Убрать из списка", icon: #imageLiteral(resourceName: "albums_outlist"), backgroundColor:#colorLiteral(red: 0.01496514957, green: 0.4769831896, blue: 0.9854087234, alpha: 1))
+            let stackBut = MGSwipeButton(title: "Убрать из списка", icon: #imageLiteral(resourceName: "albums_outlist"), backgroundColor:#colorLiteral(red: 0.01496514957, green: 0.4769831896, blue: 0.9854087234, alpha: 1))
+            stackBut.centerIconOverText()
             
             cell.rightButtons = [stackBut, volumeBut]
         }
