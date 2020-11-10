@@ -1,0 +1,20 @@
+PODS:
+  - MGSwipeTableCell (1.6.11)
+  - SwipeCellKit (2.7.1)
+
+DEPENDENCIES:
+  - MGSwipeTableCell
+  - SwipeCellKit
+
+SPEC REPOS:
+  trunk:
+    - MGSwipeTableCell
+    - SwipeCellKit
+
+SPEC CHECKSUMS:
+  MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
+  SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
+
+PODFILE CHECKSUM: 58d336bfb5c16fda0590a0e6aab889f5ce55233c
+
+COCOAPODS: 1.10.0
